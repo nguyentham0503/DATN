@@ -1,0 +1,497 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5DAFE458-61E4-4758-A22E-D391B3FFD79A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ThuHocPhi</RootNamespace>
+    <AssemblyName>ThuHocPhi</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Docking, Version=7.1.1.18, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" />
+    <Reference Include="ComponentFactory.Krypton.Navigator, Version=7.1.1.18, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" />
+    <Reference Include="ComponentFactory.Krypton.Ribbon, Version=7.1.1.18, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" />
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=7.1.1.18, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" />
+    <Reference Include="ComponentFactory.Krypton.Workspace, Version=7.1.1.18, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PerpetuumSoft.Charts, Version=7.1.1.18, Culture=neutral, PublicKeyToken=8a6ae0a3e67829b5" />
+    <Reference Include="PerpetuumSoft.Examples.RSS.Core, Version=7.1.1.18, Culture=neutral, PublicKeyToken=8a6ae0a3e67829b5" />
+    <Reference Include="PerpetuumSoft.Examples.RSS.WPF, Version=1.0.0.0, Culture=neutral, PublicKeyToken=8a6ae0a3e67829b5, processorArchitecture=MSIL" />
+    <Reference Include="PerpetuumSoft.Framework, Version=7.1.1.18, Culture=neutral, PublicKeyToken=8a6ae0a3e67829b5" />
+    <Reference Include="PerpetuumSoft.Framework.Model, Version=7.1.1.18, Culture=neutral, PublicKeyToken=8a6ae0a3e67829b5" />
+    <Reference Include="PerpetuumSoft.Instrumentation, Version=7.1.1.18, Culture=neutral, PublicKeyToken=8a6ae0a3e67829b5" />
+    <Reference Include="PerpetuumSoft.Reporting, Version=7.1.1.18, Culture=neutral, PublicKeyToken=8a6ae0a3e67829b5, processorArchitecture=MSIL" />
+    <Reference Include="PerpetuumSoft.Reporting.WPF, Version=7.1.1.18, Culture=neutral, PublicKeyToken=8a6ae0a3e67829b5" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2015.2.623.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI, Version=2015.2.623.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikCommon, Version=2015.2.623.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Reporting, Version=9.1.15.624, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.Reporting.OpenXmlRendering, Version=9.1.15.624, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.Reporting.Service, Version=9.1.15.624, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.WebForms, Version=9.1.15.624, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.WinForms, Version=9.1.15.624, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.Wpf, Version=9.1.15.624, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DB_ThuHP.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_ThuHP.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DSChuaDongHP.cs">
+      <DependentUpon>DSChuaDongHP.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DSChuaDongHP.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSChuaDongHP.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSDongHP.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSDongHP.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSDongHPByDateAndUser.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSDongHPByDateAndUser.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSHocPhiTheoNgay.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSHocPhiTheoNgay.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSHocPhiTheoNguoiThu.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSHocPhiTheoNguoiThu.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DSThuHocPhi.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSThuHocPhi.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfigConnectServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfigConnectServer.Designer.cs">
+      <DependentUpon>frmConfigConnectServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDongHPByDateAndUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDongHPByDateAndUser.Designer.cs">
+      <DependentUpon>frmDongHPByDateAndUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFees.Designer.cs">
+      <DependentUpon>frmFees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportData.Designer.cs">
+      <DependentUpon>frmImportData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIntrodue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIntrodue.Designer.cs">
+      <DependentUpon>frmIntrodue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportHPByDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportHPByDate.Designer.cs">
+      <DependentUpon>frmReportHPByDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectSemester.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectSemester.Designer.cs">
+      <DependentUpon>frmSelectSemester.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFeeByMaSV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFeeByMaSV.Designer.cs">
+      <DependentUpon>frmFeeByMaSV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNotShutFees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNotShutFees.Designer.cs">
+      <DependentUpon>frmNotShutFees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShutedFees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShutedFees.Designer.cs">
+      <DependentUpon>frmShutedFees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStatisticalByDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStatisticalByDate.Designer.cs">
+      <DependentUpon>frmStatisticalByDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStatisticalByUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStatisticalByUser.Designer.cs">
+      <DependentUpon>frmStatisticalByUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSVDongHPdgv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSVDongHPdgv.Designer.cs">
+      <DependentUpon>frmSVDongHPdgv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="session.cs" />
+    <EmbeddedResource Include="frmDongHPByDateAndUser.resx">
+      <DependentUpon>frmDongHPByDateAndUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIntrodue.resx">
+      <DependentUpon>frmIntrodue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNotShutFees.resx">
+      <DependentUpon>frmNotShutFees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportHPByDate.resx">
+      <DependentUpon>frmReportHPByDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShutedFees.resx">
+      <DependentUpon>frmShutedFees.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DB_ThuHP.dbml.layout">
+      <DependentUpon>DB_ThuHP.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="frmConfigConnectServer.resx">
+      <DependentUpon>frmConfigConnectServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFees.resx">
+      <DependentUpon>frmFees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportData.resx">
+      <DependentUpon>frmImportData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManagerUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManagerUsers.Designer.cs">
+      <DependentUpon>frmManagerUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRepairInformationPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRepairInformationPersonal.Designer.cs">
+      <DependentUpon>frmRepairInformationPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManagerUsers.resx">
+      <DependentUpon>frmManagerUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRepairInformationPersonal.resx">
+      <DependentUpon>frmRepairInformationPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectSemester.resx">
+      <DependentUpon>frmSelectSemester.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFeeByMaSV.resx">
+      <DependentUpon>frmFeeByMaSV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStatisticalByDate.resx">
+      <DependentUpon>frmStatisticalByDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStatisticalByUser.resx">
+      <DependentUpon>frmStatisticalByUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSVDongHPdgv.resx">
+      <DependentUpon>frmSVDongHPdgv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="DB_ThuHP.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DB_ThuHP.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSChuaDongHP.xsc">
+      <DependentUpon>DSChuaDongHP.xsd</DependentUpon>
+    </None>
+    <None Include="DSChuaDongHP.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSChuaDongHP.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSChuaDongHP.xss">
+      <DependentUpon>DSChuaDongHP.xsd</DependentUpon>
+    </None>
+    <None Include="DSDongHP.xsc">
+      <DependentUpon>DSDongHP.xsd</DependentUpon>
+    </None>
+    <None Include="DSDongHP.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSDongHP.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSDongHP.xss">
+      <DependentUpon>DSDongHP.xsd</DependentUpon>
+    </None>
+    <None Include="DSDongHPByDateAndUser.xsc">
+      <DependentUpon>DSDongHPByDateAndUser.xsd</DependentUpon>
+    </None>
+    <None Include="DSDongHPByDateAndUser.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSDongHPByDateAndUser.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSDongHPByDateAndUser.xss">
+      <DependentUpon>DSDongHPByDateAndUser.xsd</DependentUpon>
+    </None>
+    <None Include="DSHocPhiTheoNgay.xsc">
+      <DependentUpon>DSHocPhiTheoNgay.xsd</DependentUpon>
+    </None>
+    <None Include="DSHocPhiTheoNgay.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSHocPhiTheoNgay.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSHocPhiTheoNgay.xss">
+      <DependentUpon>DSHocPhiTheoNgay.xsd</DependentUpon>
+    </None>
+    <None Include="DSHocPhiTheoNguoiThu.xsc">
+      <DependentUpon>DSHocPhiTheoNguoiThu.xsd</DependentUpon>
+    </None>
+    <None Include="DSHocPhiTheoNguoiThu.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSHocPhiTheoNguoiThu.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSHocPhiTheoNguoiThu.xss">
+      <DependentUpon>DSHocPhiTheoNguoiThu.xsd</DependentUpon>
+    </None>
+    <None Include="DSThuHocPhi.xsc">
+      <DependentUpon>DSThuHocPhi.xsd</DependentUpon>
+    </None>
+    <None Include="DSThuHocPhi.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSThuHocPhi.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSThuHocPhi.xss">
+      <DependentUpon>DSThuHocPhi.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <!--sirinie -->
+    <None Include="Resources\Options.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-Clients-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edituser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User Menu-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Money-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\List-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apps-preferences-contact-list-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Todo List-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apps-preferences-desktop-notification-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\configuration-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1-04-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Delete-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\line_background_light_shape_form_50586_1920x1080.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\secrecy-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close-2-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\see.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
